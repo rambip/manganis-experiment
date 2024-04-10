@@ -27,11 +27,10 @@ bake_asset!(
     "#
 );
 
-pub fn show_paths() {
+pub extern "C" fn show_paths() {
     println!("{:?}", std::str::from_utf8(&ASSET1));
     println!("{:?}", std::str::from_utf8(&ASSET2));
 }
 
 fn main() {
-    show_paths()
 }
